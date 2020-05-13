@@ -10,6 +10,20 @@
       <map name="OCN2ATM_FMAPNAME">cpl/gridmaps/tx0.66v1/map_tx0.66v1_TO_T62_aave.190314.nc</map>
       <map name="OCN2ATM_SMAPNAME">cpl/gridmaps/tx0.66v1/map_tx0.66v1_TO_T62_aave.190314.nc</map>
     </gridmap>
+    <gridmap atm_grid="T62" ocn_grid="CCS1">
+      <map name="ATM2OCN_FMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_T62_TO_CCS1_patc.190813.nc</map>
+      <map name="ATM2OCN_SMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_T62_TO_CCS1_patc.190813.nc</map>
+      <map name="ATM2OCN_VMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_T62_TO_CCS1_patc.190813.nc</map>
+      <map name="OCN2ATM_FMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_CCS1_TO_T62_blin.190813.nc</map>
+      <map name="OCN2ATM_SMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_CCS1_TO_T62_blin.190813.nc</map>
+    </gridmap>
+    <gridmap atm_grid="T62" ocn_grid="Arctic5">
+      <map name="ATM2OCN_FMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_T62_TO_Arctic5_patc.200318.nc</map>
+      <map name="ATM2OCN_SMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_T62_TO_Arctic5_patc.200318.nc</map>
+      <map name="ATM2OCN_VMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_T62_TO_Arctic5_patc.200318.nc</map>
+      <map name="OCN2ATM_FMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_Arctic5_TO_T62_blin.200318.nc</map>
+      <map name="OCN2ATM_SMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_Arctic5_TO_T62_blin.200318.nc</map>
+    </gridmap>
     <gridmap atm_grid="T62" ocn_grid="gx3v7">
       <map name="ATM2OCN_FMAPNAME">cpl/gridmaps/T62/map_T62_TO_gx3v7_aave.130322.nc</map>
       <map name="ATM2OCN_SMAPNAME">cpl/gridmaps/T62/map_T62_TO_gx3v7_blin.130322.nc</map>
@@ -122,4 +136,19 @@
           <map name="ATM2WAV_SMAPNAME">cpl/gridmaps/TL319/map_TL319_TO_ww3a_bilin.170707.nc</map>
     </gridmap>
 
+    <gridmap atm_grid="TL319" ocn_grid="CCS1">
+      <map name="ATM2OCN_FMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_TL319_TO_CCS1_patc.200429.nc</map>
+      <map name="ATM2OCN_SMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_TL319_TO_CCS1_patc.200429.nc</map>
+      <map name="ATM2OCN_VMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_TL319_TO_CCS1_patc.200429.nc</map>
+      <map name="OCN2ATM_FMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_CCS1_TO_TL319_blin.200429.nc</map>
+      <map name="OCN2ATM_SMAPNAME">/center1/AKWATERS/kate/mom.input/CCS1/map_CCS1_TO_TL319_blin.200429.nc</map>
+    </gridmap>
+
+    <gridmap atm_grid="TL319" ocn_grid="Arctic5">
+      <map name="ATM2OCN_FMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_TL319_TO_Arctic5_patc.200407.nc</map>
+      <map name="ATM2OCN_SMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_TL319_TO_Arctic5_patc.200407.nc</map>
+      <map name="ATM2OCN_VMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_TL319_TO_Arctic5_patc.200407.nc</map>
+      <map name="OCN2ATM_FMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_Arctic5_TO_TL319_blin.200407.nc</map>
+      <map name="OCN2ATM_SMAPNAME">/center1/AKWATERS/kate/mom.input/Arctic5/map_Arctic5_TO_TL319_blin.200407.nc</map>
+    </gridmap>
   </gridmaps>

@@ -309,6 +309,8 @@ endif
 ifdef LIB_PNETCDF
    CPPDEFS += -D_PNETCDF
    SLIBS += -L$(LIB_PNETCDF) -lpnetcdf
+else
+   SLIBS += -L$(LIB_NETCDF_FORTRAN) -L$(LIB_NETCDF_C) -lnetcdff -lnetcdf
 endif
 
 # Set esmf.mk location with ESMF_LIBDIR having precedent over ESMFMKFILE
