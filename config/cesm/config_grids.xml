@@ -1250,6 +1250,12 @@
       <grid name="ocnice">Arctic5</grid>
     </model_grid>
 
+    <model_grid alias="T62_Bering" not_compset="_CAM">
+      <grid name="atm">T62</grid>
+      <grid name="lnd">T62</grid>
+      <grid name="ocnice">Bering</grid>
+    </model_grid>
+
     <model_grid alias="TL319_CCS1" not_compset="_CAM">
       <grid name="atm">TL319</grid>
       <grid name="lnd">TL319</grid>
@@ -1260,6 +1266,12 @@
       <grid name="atm">TL319</grid>
       <grid name="lnd">TL319</grid>
       <grid name="ocnice">Arctic5</grid>
+    </model_grid>
+
+    <model_grid alias="TL319_Bering" not_compset="_CAM">
+      <grid name="atm">TL319</grid>
+      <grid name="lnd">TL319</grid>
+      <grid name="ocnice">Bering</grid>
     </model_grid>
 
   </grids>
@@ -1480,14 +1492,16 @@
       <file grid="atm|lnd" mask="tx0.1v2" >$DIN_LOC_ROOT/share/domains/domain.lnd.T62_tx0.1v2_090623.nc</file>
       <file grid="atm|lnd" mask="tx0.1v3" >$DIN_LOC_ROOT/share/domains/domain.lnd.T62_tx0.1v3.170929.nc</file>
       <file grid="atm|lnd" mask="oQU120"  >$DIN_LOC_ROOT/share/domains/domain.lnd.T62_oQU120.160325.nc</file>
-      <file grid="atm|lnd" mask="CCS1"    >/center1/AKWATERS/kate/mom.input/CCS1/domain.lnd.T62_CCS1.190813.nc</file>
-      <file grid="atm|lnd" mask="Arctic5" >/center1/AKWATERS/kate/mom.input/Arctic5/domain.lnd.T62_Arctic5.200318.nc</file>
+      <file grid="atm|lnd" mask="CCS1"    >/glade/work/kate/mom.input/CCS1/domain.lnd.T62_CCS1.190813.nc</file>
+      <file grid="atm|lnd" mask="Arctic5" >/glade/work/kate/mom.input/Arctic5/domain.lnd.T62_Arctic5.200318.nc</file>
+      <file grid="atm|lnd" mask="Bering"  >/glade/work/kate/mom.input/Bering/domain.lnd.T62_Bering.200527.nc</file>
       <file grid="ocnice"  mask="gx1v6"   >$DIN_LOC_ROOT/share/domains/domain.ocn.T62_gx1v6.130409.nc</file>
       <file grid="ocnice"  mask="gx1v7"   >$DIN_LOC_ROOT/share/domains/domain.ocn.T62_gx1v7.151008.nc</file>
       <file grid="ocnice"  mask="gx3v7"   >$DIN_LOC_ROOT/share/domains/domain.ocn.T62_gx3v7.130409.nc</file>
       <file grid="ocnice"  mask="tx0.66v1">$DIN_LOC_ROOT/share/domains/domain.ocn.T62_tx0.66v1.190425.nc</file>
-      <file grid="ocnice"  mask="CCS1"    >/center1/AKWATERS/kate/mom.input/CCS1/domain.ocn.T62_CCS1.190813.nc</file>
-      <file grid="ocnice"  mask="Arctic5" >/center1/AKWATERS/kate/mom.input/Arctic5/domain.ocn.T62_Arctic5.200318.nc</file>
+      <file grid="ocnice"  mask="CCS1"    >/glade/work/kate/mom.input/CCS1/domain.ocn.T62_CCS1.190813.nc</file>
+      <file grid="ocnice"  mask="Arctic5" >/glade/work/kate/mom.input/Arctic5/domain.ocn.T62_Arctic5.200318.nc</file>
+      <file grid="ocnice"  mask="Bering"  >/glade/work/kate/mom.input/Bering/domain.ocn.T62_Bering.200527.nc</file>
       <file grid="atm|lnd" mask="tn1v3"   >$DIN_LOC_ROOT/share/domains/domain.lnd.T62_tn1v3.160414.nc</file>
       <file grid="atm|lnd" mask="tn0.25v3">$DIN_LOC_ROOT/share/domains/domain.lnd.T62_tn0.25v3.160721.nc</file>
       <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/T62_040121_ESMFmesh.nc</mesh>
@@ -1719,10 +1733,12 @@
       <file grid="ocnice"  mask="tx0.1v2">$DIN_LOC_ROOT/share/domains/domain.ocn.tx0.1v2.161014.nc</file>
       <file grid="atm|lnd" mask="tx0.1v3">$DIN_LOC_ROOT/share/domains/domain.lnd.TL319_tx0.1v3.170730.nc</file>
       <file grid="ocnice"  mask="tx0.1v3">$DIN_LOC_ROOT/share/domains/domain.ocn.tx0.1v3.170730.nc</file>
-      <file grid="ocnice"  mask="CCS1" >/center1/AKWATERS/kate/mom.input/CCS1/domain.ocn.TL319_CCS1.200429.nc</file>
-      <file grid="atm|lnd" mask="CCS1" >/center1/AKWATERS/kate/mom.input/CCS1/domain.lnd.TL319_CCS1.200429.nc</file>
-      <file grid="ocnice"  mask="Arctic5" >/center1/AKWATERS/kate/mom.input/Arctic5/domain.ocn.TL319_Arctic5.200407.nc</file>
-      <file grid="atm|lnd" mask="Arctic5" >/center1/AKWATERS/kate/mom.input/Arctic5/domain.lnd.TL319_Arctic5.200407.nc</file>
+      <file grid="atm|lnd" mask="CCS1" >/glade/work/kate/mom.input/CCS1/domain.lnd.TL319_CCS1.200429.nc</file>
+      <file grid="ocnice"  mask="CCS1" >/glade/work/kate/mom.input/CCS1/domain.ocn.TL319_CCS1.200429.nc</file>
+      <file grid="atm|lnd" mask="Arctic5" >/glade/work/kate/mom.input/Arctic5/domain.lnd.TL319_Arctic5.200407.nc</file>
+      <file grid="ocnice"  mask="Arctic5" >/glade/work/kate/mom.input/Arctic5/domain.ocn.TL319_Arctic5.200407.nc</file>
+      <file grid="atm|lnd" mask="Bering" >/glade/work/kate/mom.input/Bering/domain.lnd.TL319_Bering.200527.nc</file>
+      <file grid="ocnice"  mask="Bering" >/glade/work/kate/mom.input/Bering/domain.ocn.TL319_Bering.200527.nc</file>
       <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/TL319_151007_ESMFmesh.nc</mesh>
       <desc>TL319 grid for JRA55</desc>
     </domain>
@@ -1907,23 +1923,6 @@
       <desc>4-km Greenland grid, for use with the glissade dycore</desc>
     </domain>
 
-    <!-- Kate's domains-->
-
-    <domain name="CCS1">
-      <nx>180</nx> <ny>480</ny>
-      <file grid="ocnice">/center1/AKWATERS/kate/mom.input/CCS1/domain.ocn.CCS1.190813.nc</file>
-      <desc>CCS1 is Coastal California Sysatem at 7 km MOM6 grid:</desc>
-      <support>For MOM6 experiments (comparison to ROMS and stand-alone MOM6)</support>
-    </domain>
-
-    <domain name="Arctic5">
-      <nx>688</nx> <ny>1088</ny>
-      <file grid="ocnice">/center1/AKWATERS/kate/mom.input/Arctic5/domain.ocn.Arctic5.200318.nc</file>
-      <desc>Arctic5 is a pan-Arctic grid at 5-9 km MOM6 grid:</desc>
-      <support>For MOM6-CICE experiments</support>
-    </domain>
-
-
     <!-- WW3 domains-->
 
     <domain name="ww3a">
@@ -1992,6 +1991,30 @@
       <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/C384_181018_ESMFmesh.nc</mesh>
       <desc>C384 is a fvcubed xx-deg grid:</desc>
       <support>Experimental for fv3 dycore</support>
+    </domain>
+
+    <!-- Kate's domains-->
+
+    <domain name="CCS1">
+      <nx>180</nx> <ny>480</ny>
+      <file grid="ocnice">/glade/work/kate/mom.input/CCS1/domain.ocn.CCS1.190813.nc</file>
+      <desc>CCS1 is Coastal California System at 7 km MOM6 grid:</desc>
+      <support>For MOM6 experiments (comparison to ROMS and stand-alone MOM6)</support>
+    </domain>
+
+    <domain name="Arctic5">
+      <nx>688</nx> <ny>1088</ny>
+      <file grid="ocnice">/glade/work/kate/mom.input/Arctic5/domain.ocn.Arctic5.200318.nc</file>
+      <mesh driver="nuopc">/glade/work/kate/mom.input/Arctic5/Arctic5_SCRIP_200310_ESMFmesh.nc</mesh>
+      <desc>Arctic5 is a pan-Arctic grid at 5-9 km MOM6 grid:</desc>
+      <support>For MOM6-CICE experiments</support>
+    </domain>
+
+    <domain name="Bering">
+      <nx>237</nx> <ny>277</ny>
+      <file grid="ocnice">/glade/work/kate/mom.input/Bering/domain.ocn.Bering.200527.nc</file>
+      <desc>Bering Sea domain at 10 km ocean-ice grid:</desc>
+      <support>For MOM6 experiments with coupled ice</support>
     </domain>
 
   </domains>
