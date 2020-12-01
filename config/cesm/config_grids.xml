@@ -2008,6 +2008,7 @@
       <mesh driver="nuopc">/glade/work/kate/mom.input/Arctic5/Arctic5_SCRIP_200310_ESMFmesh.nc</mesh>
       <desc>Arctic5 is a pan-Arctic grid at 5-9 km MOM6 grid:</desc>
       <support>For MOM6-CICE experiments</support>
+      <mesh driver="nuopc">/glade/work/kate/mom.input/Arctic5/Arctic5_SCRIP_200310_ESMFmesh.nc</mesh>
     </domain>
 
     <domain name="Bering">
@@ -2015,6 +2016,7 @@
       <file grid="ocnice">/glade/work/kate/mom.input/Bering/domain.ocn.Bering.200527.nc</file>
       <desc>Bering Sea domain at 10 km ocean-ice grid:</desc>
       <support>For MOM6 experiments with coupled ice</support>
+      <mesh driver="nuopc">/glade/work/kate/mom.input/Bering/Bering_SCRIP_200527_ESMFmesh.nc</mesh>
     </domain>
 
   </domains>
