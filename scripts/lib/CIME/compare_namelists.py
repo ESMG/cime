@@ -353,7 +353,7 @@ def _compare_values(name, gold_value, comp_value, case):
                 comments += "  list variable '{}' has extra value {}\n".format(name, comp_value_list_item)
 
     elif (type(gold_value) is OrderedDict):
-        for key, gold_value_dict_item in gold_value.items():
+        for key, gold_value_dict_item in list(gold_value.items()):
             if (key in comp_value):
                 comments += _compare_values("{} dict item {}".format(name, key),
                                             gold_value_dict_item, comp_value[key], case)
@@ -493,12 +493,12 @@ def _compare_namelists(gold_namelists, comp_namelists, case):
     ''
     """
     different_namelists = OrderedDict()
-    for namelist, gold_names in gold_namelists.items():
+    for namelist, gold_names in list(gold_namelists.items()):
         if (namelist not in comp_namelists):
             different_namelists[namelist] = ["Missing namelist: {}\n".format(namelist)]
         else:
             comp_names = comp_namelists[namelist]
-            for name, gold_value in gold_names.items():
+            for name, gold_value in list(gold_names.items()):
                 if (name not in comp_names):
                     different_namelists.setdefault(namelist, []).append("  missing variable: '{}'\n".format(name))
                 else:
@@ -516,7 +516,7 @@ def _compare_namelists(gold_namelists, comp_namelists, case):
             different_namelists[namelist] = ["Found extra namelist: {}\n".format(namelist)]
 
     comments = ""
-    for namelist, nlcomment in different_namelists.items():
+    for namelist, nlcomment in list(different_namelists.items()):
         if len(nlcomment) == 1:
             comments += nlcomment[0]
         else:

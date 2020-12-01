@@ -96,12 +96,12 @@ class EnvironmentContext(object):
 
     def __enter__(self):
         self.old_envs = {}
-        for k, v in self.envs.items():
+        for k, v in list(self.envs.items()):
             self.old_envs[k] = os.environ.get(k)
             os.environ[k] = v
 
     def __exit__(self, *args):
-        for k, v in self.old_envs.items():
+        for k, v in list(self.old_envs.items()):
             if v:
                 os.environ[k] = v
             else:
@@ -1336,7 +1336,7 @@ def compute_total_time(job_cost_map, proc_pool):
     running_jobs = {} # name -> (procs, est-time, start-time)
     while len(waiting_jobs) > 0 or len(running_jobs) > 0:
         launched_jobs = []
-        for jobname, data in waiting_jobs.items():
+        for jobname, data in list(waiting_jobs.items()):
             procs_for_job, time_for_job = data
             if procs_for_job <= proc_pool:
                 proc_pool -= procs_for_job
@@ -1347,7 +1347,7 @@ def compute_total_time(job_cost_map, proc_pool):
             del waiting_jobs[launched_job]
 
         completed_jobs = []
-        for jobname, data in running_jobs.items():
+        for jobname, data in list(running_jobs.items()):
             procs_for_job, time_for_job, time_started = data
             if (current_time - time_started) >= time_for_job:
                 proc_pool += procs_for_job

@@ -3,7 +3,7 @@ Implementation of the cs.status script, which prints the status of all
 of the tests in one or more test suites
 """
 
-from __future__ import print_function
+
 from CIME.XML.standard_module_setup import *
 from CIME.XML.expected_fails_file import ExpectedFailsFile
 from CIME.test_status import TestStatus

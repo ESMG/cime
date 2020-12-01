@@ -211,7 +211,7 @@ def _parse_runconfig(filename):
 
 def findDiff(d1, d2, path="", case=None):
     comment = ""
-    for k in d1.keys():
+    for k in list(d1.keys()):
         if not k in d2:
             comment += path + ":\n"
             comment +=  k + " as key not in d2\n"

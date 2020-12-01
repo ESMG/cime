@@ -150,7 +150,7 @@ class TestStatus(object):
         self.flush()
 
     def __iter__(self):
-        for phase, data in self._phase_statuses.items():
+        for phase, data in list(self._phase_statuses.items()):
             yield phase, data[0]
 
     def __eq__(self, rhs):
@@ -247,7 +247,7 @@ class TestStatus(object):
             xfails = expected_fails.ExpectedFails()
         result = ""
         if self._phase_statuses:
-            for phase, data in self._phase_statuses.items():
+            for phase, data in list(self._phase_statuses.items()):
                 if phase in skip_phase_list:
                     continue
                 status, comments = data

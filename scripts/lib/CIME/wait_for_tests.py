@@ -216,7 +216,7 @@ def create_cdash_upload_xml(results, cdash_build_name, cdash_build_group, utc_ti
 
         need_to_upload = False
 
-        for test_name, test_data in results.items():
+        for test_name, test_data in list(results.items()):
             test_path, test_status = test_data
 
             if test_status not in [TEST_PASS_STATUS, NAMELIST_FAIL_STATUS] or force_log_upload:
